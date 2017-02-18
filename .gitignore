@@ -1,0 +1,12 @@
+src/Elevator Tycoon/.vs/*
+src/Elevator Tycoon/Build/Elevator Tycoon/bin/*
+src/Elevator Tycoon/Build/Elevator Tycoon/obj/*
+src/Elevator Tycoon/Build/.vs/*
+src/Elevator Tycoon/Build/GeneratedProjects/UWP/Assembly-CSharp/bin/*
+src/Elevator Tycoon/Temp/UnityVS_bin/Debug/*
+src/Elevator Tycoon/Temp/UnityVS_obj/Debug/*
+src/Elevator Tycoon/Build/*
+src/Elevator Tycoon/Temp/*
+src/Elevator Tycoon/Library/*
+src/Elevator Tycoon/ProjectSettings/*
+src/Elevator Tycoon/UWP/project.lock.json
