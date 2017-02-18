@@ -1,0 +1,10 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <UnityInstallationDir>E:\Program Files\Unity\Editor\</UnityInstallationDir>
+        <UnityWSASolutionName>Elevator Tycoon</UnityWSASolutionName>
+        <UnityWSASolutionDir>E:\Source\gh\liquidboy\ElevatorTycoon\src\Elevator Tycoon\Build\</UnityWSASolutionDir>
+        <UnityWSAPlayerDir>E:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
+        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
+        <UnityProjectDir>E:\Source\gh\liquidboy\ElevatorTycoon\src\Elevator Tycoon\</UnityProjectDir>
+    </PropertyGroup>
+</Project>
