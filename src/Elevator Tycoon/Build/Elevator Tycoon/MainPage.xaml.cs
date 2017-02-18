@@ -283,10 +283,10 @@ namespace Elevator_Tycoon
                 var v3 = (UnityEngine.Vector3)arg;
                 var x = v3.x * Window.Current.Bounds.Width;
                 var y = (1 - v3.y) * Window.Current.Bounds.Height;
-                // tbMain.Text = $"x:{ x } y: {y} z: { v3.z}";
-                lblX.Text = x.ToString();
-                lblY.Text = y.ToString();
-                grdCallout.Margin = new Thickness((x + 50), (y - 50), 0,0);
+                var z = v3.z;
+
+                ucCallout.UpdateLabelsAndReposition(x, y, z);
+                //ucCallout.Margin = new Thickness((x + 50), (y - 50), 0,0);
             }
             ), false);
 

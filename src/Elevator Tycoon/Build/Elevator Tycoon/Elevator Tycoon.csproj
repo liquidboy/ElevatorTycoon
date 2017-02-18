@@ -155,15 +155,22 @@
     <ApplicationDefinition Include="App.xaml">
     </ApplicationDefinition>
     <Compile Include="..\..\UWPShared\Proxies.cs">
-      <Link>Proxies.cs</Link>
+      <Link>Custom\Proxies.cs</Link>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Page Include="Custom\PositionAdornment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Custom\PositionAdornment.xaml.cs">
+      <DependentUpon>PositionAdornment.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

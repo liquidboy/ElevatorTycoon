@@ -6,6 +6,7 @@
     xmlns:local="using:Elevator_Tycoon"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:custom="using:Elevator_Tycoon.Custom"
     mc:Ignorable="d"
     FontSize="10"
     Background="#FFFFFF">
@@ -16,21 +17,7 @@
             </Grid>
         </SwapChainPanel>
         <TextBlock x:Name="tbMain" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,10,10,10"></TextBlock>
-        <Grid x:Name="grdCallout" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <StackPanel Orientation="Vertical" Padding="2" >
-                <StackPanel Orientation="Horizontal" Padding="2" Background="Yellow" >
-                    <TextBlock Width="15" TextAlignment="Right" Margin="0,0,10,0">x:</TextBlock>
-                    <TextBlock Margin="0,0,0,0" x:Name="lblX">0</TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Padding="2" Background="Yellow" Margin="0,5,0,0">
-                    <TextBlock Width="15" TextAlignment="Right" Margin="0,0,10,0">y:</TextBlock>
-                    <TextBlock Margin="0,0,0,0" x:Name="lblY">0</TextBlock>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Padding="2" Background="Yellow" Margin="0,5,0,0">
-                    <TextBlock Width="15" TextAlignment="Right" Margin="0,0,10,0">z:</TextBlock>
-                    <TextBlock Margin="0,0,0,0" x:Name="lblZ">0</TextBlock>
-                </StackPanel>
-            </StackPanel>
-        </Grid>
+        <custom:PositionAdornment x:Name="ucCallout" HorizontalAlignment="Left" VerticalAlignment="Top"></custom:PositionAdornment>
+        
     </Grid>
 </Page>
