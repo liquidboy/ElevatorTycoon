@@ -30,7 +30,7 @@ Elevator Tycoon\bin\x86\Debug\AppX\Properties\Default.rd.xml: 72EB282657164E79A1
 Elevator Tycoon\obj\ARM\Debug\App.xaml: 0659B41C12BB9AAC66ED215EEB78BEA9
 Elevator Tycoon\obj\ARM\Debug\MainPage.xaml: FDB99764A8F7F59725E1E9E6605E0111
 Elevator Tycoon\obj\x86\Debug\App.xaml: 0659B41C12BB9AAC66ED215EEB78BEA9
-Elevator Tycoon\obj\x86\Debug\MainPage.xaml: EACB44BB23B663068A2EA3C4B48AC124
+Elevator Tycoon\obj\x86\Debug\MainPage.xaml: modified
 Elevator Tycoon\Properties\AssemblyInfo.cs: B625F434871C4B54F24F8197A75D575B
 Elevator Tycoon\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1

@@ -9,6 +9,12 @@ namespace Elevator_Tycoon
     public delegate void UnityEvent(object arg);
     public sealed class Communications
     {
+        public static void SetCubeMaterialColor(byte r, byte g, byte b, string unityObjectName)
+        {
+            UnityEngine.GameObject go = UnityEngine.GameObject.Find(unityObjectName);
+            UnityEngine.Material mat = go.GetComponent<XamlConnection>().material;
+            mat.color = new UnityEngine.Color32(r, g, b, 255);
+        }
         public static void SetEvent(UnityEvent e, string unityObjectName)
         {
             UnityEngine.GameObject go = UnityEngine.GameObject.Find(unityObjectName);
@@ -23,28 +29,4 @@ namespace Elevator_Tycoon
         }
     }
 
-
-    //insert in "OnInitialize" of component
-    //UnityPlayer.AppCallbacks.Instance.Initialized += OnInitialized;
-
-    //private long eventWasReceivedCount;
-    //private void OnInitialized()
-    //{
-    //    AppCallbacks.Instance.InvokeOnAppThread(() =>
-    //    {
-    //        Communications.SetEvent(UnityToXAML);
-    //    }, false);
-    //}
-    //public void UnityToXAML(object arg)
-    //{
-    //    UnityPlayer.AppCallbacks.Instance.InvokeOnUIThread(new UnityPlayer.AppCallbackItem(() =>
-    //    {
-    //        eventWasReceivedCount++;
-    //        var v3 = (UnityEngine.Vector3)arg;
-    //        tbMain.Text = $"x:{ v3.x } y: { v3.y} z: { v3.z}";
-    //    }
-    //    ), false);
-
-
-    //}
 }

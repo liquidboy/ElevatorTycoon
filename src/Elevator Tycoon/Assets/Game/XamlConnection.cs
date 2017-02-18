@@ -7,5 +7,7 @@ public class XamlConnection : MonoBehaviour {
     public delegate void OnEvent(object arg);
 
     public OnEvent onEvent = null;
-    
+
+    public Material material;
+
 }

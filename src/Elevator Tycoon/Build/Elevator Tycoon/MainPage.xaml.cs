@@ -267,7 +267,6 @@ namespace Elevator_Tycoon
 		}
 #endif
 
-        private long eventWasReceivedCount;
         private void OnInitialized()
         {
             AppCallbacks.Instance.InvokeOnAppThread(() =>
@@ -279,17 +278,30 @@ namespace Elevator_Tycoon
         {
             UnityPlayer.AppCallbacks.Instance.InvokeOnUIThread(new UnityPlayer.AppCallbackItem(() =>
             {
-                eventWasReceivedCount++;
                 var v3 = (UnityEngine.Vector3)arg;
                 var x = v3.x * Window.Current.Bounds.Width;
                 var y = (1 - v3.y) * Window.Current.Bounds.Height;
                 var z = v3.z;
 
                 ucCallout.UpdateLabelsAndReposition(x, y, z);
-                //ucCallout.Margin = new Thickness((x + 50), (y - 50), 0,0);
             }
             ), false);
 
+
+        }
+        private void XAMLToUnity(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            //byte r = (byte)redSlider.Value;
+            //byte g = (byte)greenSlider.Value;
+            //byte b = (byte)blueSlider.Value;
+            if (UnityPlayer.AppCallbacks.Instance.IsInitialized())
+            {
+                UnityPlayer.AppCallbacks.Instance.InvokeOnAppThread(new UnityPlayer.AppCallbackItem(() =>
+                {
+                    //Communications.SetCubeMaterialColor(r, g, b);
+                }
+                ), false);
+            }
 
         }
     }

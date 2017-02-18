@@ -131,7 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="E:\Source\gh\liquidboy\ElevatorTycoon\src\Elevator Tycoon\Build\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{5a7816c3-7f2d-418b-8cb8-544d32278265}</Project>
+      <Project>{34988432-7065-4b1d-80a9-cdbc9cd58bab}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <Reference Include="UnityEngine">
